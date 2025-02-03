@@ -16,6 +16,9 @@ spec:
     namespace: sample-ns
 
   syncPolicy:
+    syncOptions:
+    - CreateNamespace=true
+    
     automated:
       selfHeal: true
       prune: true
