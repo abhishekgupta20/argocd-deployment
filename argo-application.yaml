@@ -13,12 +13,12 @@ spec:
 
   destination: 
     server: https://kubernetes.default.svc
-    namespace: sample-ns
+    namespace: argocd-demo
 
   syncPolicy:
     syncOptions:
     - CreateNamespace=true
-    
+
     automated:
       selfHeal: true
       prune: true
